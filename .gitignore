@@ -218,3 +218,25 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local NBA data and generated artifacts (fixtures remain trackable)
+/data/raw/*
+/data/processed/*
+/artifacts/*
+!/data/raw/.gitkeep
+!/data/processed/.gitkeep
+!/artifacts/.gitkeep
+.env.*
+!.env.example
+*.sqlite*
+*.db
+*.pkl
+*.joblib
+*.pt
+.DS_Store
+*.parquet
+!tests/fixtures/*.parquet
+*.onnx
+*.pth
+*.ckpt
+*.tmp

@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nba-player-prop-prediction"
+version = "0.1.0"
+description = "Validated historical NBA data foundation for probabilistic player projections"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = [
+  "pandas>=2.2.3,<3", "numpy>=2.1,<3", "scipy>=1.14,<2",
+  "scikit-learn>=1.6,<2", "nba_api>=1.10,<2", "pyarrow>=19,<24",
+  "python-dotenv>=1,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1"]
+plots = ["matplotlib>=3.9,<4"]
+
+[project.scripts]
+nba-props = "nba_player_prop_prediction.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
