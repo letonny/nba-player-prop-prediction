@@ -15,6 +15,9 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+api = ["fastapi>=0.115,<1", "uvicorn>=0.34,<1", "httpx>=0.28,<1"]
+probabilistic = ["catboost>=1.2.8,<2", "xgboostlss==0.6.1", "ngboost==0.5.11"]
+minutes = ["catboost>=1.2.8,<2"]
 dev = ["pytest>=8,<10", "ruff>=0.9,<1"]
 plots = ["matplotlib>=3.9,<4"]
 

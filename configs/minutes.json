@@ -1,0 +1,16 @@
+{
+  "validation_start": "2024-07-01",
+  "test_start": "2025-07-01",
+  "min_train": 5000,
+  "min_validation": 1000,
+  "min_test": 1000,
+  "min_train_dates": 60,
+  "min_eval_dates": 14,
+  "min_players": 50,
+  "iterations": 300,
+  "depth": 6,
+  "learning_rate": 0.05,
+  "seed": 42,
+  "threads": 2,
+  "interval_alpha": 0.1
+}

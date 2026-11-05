@@ -240,3 +240,8 @@ __marimo__/
 *.pth
 *.ckpt
 *.tmp
+
+# Minutes models and CatBoost working output
+*.cbm
+catboost_info/
+.venv-*/

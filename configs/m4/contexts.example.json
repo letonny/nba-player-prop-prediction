@@ -1,0 +1,15 @@
+[
+  {
+    "game_id": "future-example",
+    "game_date": "2026-11-10",
+    "scheduled_tipoff": "2026-11-10T19:30:00-05:00",
+    "season": "2026-27",
+    "season_type": "Regular Season",
+    "team_id": "1610612747",
+    "opponent_id": "1610612743",
+    "home_away": "home",
+    "player_id": "2544",
+    "player_name": "LeBron James",
+    "opponent": "DEN"
+  }
+]
